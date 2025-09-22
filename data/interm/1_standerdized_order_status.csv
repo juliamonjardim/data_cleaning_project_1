@@ -1,0 +1,16 @@
+order_status,cleaned_order_status
+Pending,Pending
+pending,Pending
+Delivered,Delivered
+delivered,Delivered
+delivered,Delivered
+Delivered,Delivered
+Delivered,Delivered
+shipped,Shipped
+refunded,Refunded
+returned,Returned
+Returned,Returned
+DELIVERED,Delivered
+delivered,Delivered
+returned,Returned
+Returned,Returned

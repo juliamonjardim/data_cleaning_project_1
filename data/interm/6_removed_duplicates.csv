@@ -1,0 +1,11 @@
+order_id,customer_name,email,order_date,product_name,quantity,price,country,order_status,notes,rn
+1006,Ankit Patel,ankit@@patel.com,2023-11-07,NULL,1,0.0,india,pending,no stock,1
+1009,NULL,jessica@abc.com,2023-11-09,Macbook Pro,1,1299.99,canada,returned,Missing name,1
+1012,tom o'brien,tom.obrien@gmail.com,2023-11-05,Google pixel,1,599.0,uk,Delivered,no comment,1
+1001,John Smith,john.smith@gmail.com,2023-11-02,Apple Watch,1,399.99,usa,Delivered,-,1
+1005,Mary Johnson,mary.j@gmail.com,2023-11-06,Samsung Galaxy S22,2,800.0,United Kingdom,returned,Return due to defect,1
+1003,SARAH THOMPSON,sarah.t@gmail.com,2023/10/30,Samsung Galaxy S22,two,799.0,United States,shipped,"""customer requested refund""",1
+1010,Aisha Khan,aisha.khan@outlook,2023-11-10,MacBook Pro,1,1299.99,CANADA,Returned,check eligibility,1
+1014,Ankit Patel,ankit@patel.com,2023-11-07,Samsung Galaxy S22,1,,India,Pending,missing price,1
+1008,Carlos Hernández,carlos@hernandez.com,2023-11-08,Iphone 14,1,1099.0,spain,DELIVERED,-,1
+1004,Tom O'Brien,,2023-11-05,Google Pixel,1,599.0,UK,Delivered,NULL,1

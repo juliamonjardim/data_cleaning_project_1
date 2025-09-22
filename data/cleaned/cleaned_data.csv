@@ -1,0 +1,11 @@
+order_id,customer_name,email,cleaned_order_status,cleaned_product_name,cleaned_quantity,standardized_order_date,rn
+1005,Mary Johnson,mary.j@gmail.com,Returned,Samsung Galaxy S22,2,2023-11-06,1
+1001,John Smith,john.smith@gmail.com,Delivered,Apple Watch,1,2023-11-02,1
+1009,Null,jessica@abc.com,Returned,MacBook Pro,1,2023-11-09,1
+1003,Sarah Thompson,sarah.t@gmail.com,Shipped,Samsung Galaxy S22,2,,1
+1006,Ankit Patel,ankit@@patel.com,Pending,Other,1,2023-11-07,1
+1010,Aisha Khan,aisha.khan@outlook,Returned,MacBook Pro,1,2023-11-10,1
+1014,Ankit Patel,ankit@patel.com,Pending,Samsung Galaxy S22,1,2023-11-07,1
+1008,Carlos Hernández,carlos@hernandez.com,Delivered,iPhone 14,1,2023-11-08,1
+1004,Tom O'brien,,Delivered,Google Pixel,1,2023-11-05,1
+1012,Tom O'brien,tom.obrien@gmail.com,Delivered,Google Pixel,1,2023-11-05,1
