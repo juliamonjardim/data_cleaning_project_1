@@ -19,7 +19,7 @@ WITH cleaned_data AS (
             WHEN LOWER(order_status) LIKE "%pend%" THEN "Pending"
             WHEN LOWER(order_status) LIKE "%ship%" THEN "Shipped"
         ELSE "Other" 
-        END AS cleaned_order_status
+        END AS cleaned_order_status,
 
         -- Standardized product_name: 
         CASE
@@ -29,14 +29,14 @@ WITH cleaned_data AS (
             WHEN LOWER(product_name) LIKE "%iphone 14%" THEN "iPhone 14"
             WHEN LOWER(product_name) LIKE "%macbook pro%" THEN "MacBook Pro"
         ELSE "Other"
-        END AS cleaned_product_name
+        END AS cleaned_product_name,
 
         -- Cleaned quantity:
         CASE
             WHEN LOWER(quantity) = "two" THEN 2
 
         ELSE CAST(quantity AS INT64)
-        END AS cleaned_quantity
+        END AS cleaned_quantity,
 
         -- Standardize date:
         COALESCE(
@@ -45,7 +45,7 @@ WITH cleaned_data AS (
         ) AS standardized_order_date
 
     FROM `data-cleaning-project-09-2025.customer_orders.order_info`
-    WHERE customer_name IN NOT NULL
+    WHERE customer_name IS NOT NULL
 ),
 
 deduplicated_data AS (
@@ -55,4 +55,8 @@ deduplicated_data AS (
     ORDER BY order_id
     ) AS rn
     FROM cleaned_data
-);
+)
+
+SELECT * 
+FROM deduplicated_data
+WHERE rn = 1;
